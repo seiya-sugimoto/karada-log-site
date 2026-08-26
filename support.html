@@ -25,6 +25,9 @@
     .meta { font-size: 13px; color: #888; margin-bottom: 40px; }
     a  { color: #2F7E78; }
     .note { background: #F7F5F1; border-left: 3px solid #2F7E78; padding: 12px 16px; margin: 16px 0; }
+    .form-wrap { margin: 20px 0; }
+    .form-wrap iframe { width: 100%; height: 900px; border: 1px solid #E8E3DA; border-radius: 8px; }
+    .small { font-size: 13px; color: #6E675C; margin-bottom: 8px; }
   </style>
 </head>
 <body>
@@ -33,8 +36,7 @@
   <p class="meta">karada-log</p>
 
   <h2>お問い合わせ</h2>
-  <p>ご質問、不具合のご報告、ご要望は下記までお送りください。</p>
-  <p><strong>[お問い合わせ用メールアドレスをここに記載]</strong></p>
+  <p>ご質問、不具合のご報告、ご要望は下記フォームよりお送りください。</p>
   <p>不具合のご報告の際は、次の情報を添えていただけると調査がスムーズです。</p>
   <ul>
     <li>iPhoneの機種とiOSのバージョン</li>
@@ -42,6 +44,19 @@
     <li>karada-log のバージョン（設定画面の最下部に表示されます）</li>
     <li>どの画面で、どのような操作をしたときに起きたか</li>
   </ul>
+
+  <div class="form-wrap">
+    <iframe
+      src="[GOOGLE_FORM_ID を差し替え]/viewform?embedded=true"
+      title="karada-log お問い合わせフォーム"
+      loading="lazy">読み込んでいます…</iframe>
+  </div>
+  <p class="small">
+    フォームが表示されない場合は、
+    <a href="[GOOGLE_FORM_ID を差し替え]/viewform" target="_blank" rel="noopener">こちらから直接開く</a>
+    こともできます。
+  </p>
+  <p class="small">送信いただいた内容は、お問い合わせへの対応のみに使用します。<strong>健康データそのものを送信する必要はありません。</strong></p>
 
   <h2>よくあるご質問</h2>
 
