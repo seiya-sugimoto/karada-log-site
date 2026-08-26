@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サポート — karada-log</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+      background: #fff;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 8px; }
+    h2 { font-size: 17px; font-weight: 600; margin: 32px 0 8px; }
+    h3 { font-size: 15px; font-weight: 600; margin: 20px 0 6px; }
+    p  { margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 4px; }
+    .meta { font-size: 13px; color: #888; margin-bottom: 40px; }
+    a  { color: #2F7E78; }
+    .note { background: #F7F5F1; border-left: 3px solid #2F7E78; padding: 12px 16px; margin: 16px 0; }
+  </style>
+</head>
+<body>
+
+  <h1>サポート</h1>
+  <p class="meta">karada-log</p>
+
+  <h2>お問い合わせ</h2>
+  <p>ご質問、不具合のご報告、ご要望は下記までお送りください。</p>
+  <p><strong>[お問い合わせ用メールアドレスをここに記載]</strong></p>
+  <p>不具合のご報告の際は、次の情報を添えていただけると調査がスムーズです。</p>
+  <ul>
+    <li>iPhoneの機種とiOSのバージョン</li>
+    <li>Apple Watchの機種とwatchOSのバージョン（お使いの場合）</li>
+    <li>karada-log のバージョン（設定画面の最下部に表示されます）</li>
+    <li>どの画面で、どのような操作をしたときに起きたか</li>
+  </ul>
+
+  <h2>よくあるご質問</h2>
+
+  <h3>データが表示されません</h3>
+  <p>karada-log は、Apple WatchやiPhoneがAppleヘルスケアに記録したデータを読み取って表示します。次の点をご確認ください。</p>
+  <ul>
+    <li>「ヘルスケア」App →右上のプロフィール→「App」→ karada-log で、読み取りが許可されているか</li>
+    <li>Apple Watchを装着していた時間帯か（外していた間のデータは記録されません）</li>
+    <li>アプリ内の「設定」→「データが取れないときは」で、項目ごとの取得条件をご確認ください</li>
+  </ul>
+  <div class="note">
+    <p style="margin-bottom:0">Appleの仕様上、アプリ側からは「読み取りが許可されていない」のか「データが存在しない」のかを区別できません。そのため karada-log は、どちらの場合も「データがありません」と表示します。</p>
+  </div>
+
+  <h3>睡眠や手首皮膚温が記録されません</h3>
+  <p>手首皮膚温は Apple Watch Series 8以降、Apple Watch Ultra、Apple Watch SE（第3世代）でのみ取得できます。それ以前の機種では取得できません。</p>
+  <p>また、睡眠と手首皮膚温は、Apple Watchを装着して就寝し、睡眠の記録を有効にしている必要があります。手首皮膚温は、数晩の記録が蓄積されてから値が出はじめます。</p>
+
+  <h3>「基準線を計算中」と表示されます</h3>
+  <p>karada-log は、他の人とではなく、あなた自身の過去の記録と比べます。そのため、比較の土台となる記録が一定量たまるまで基準線を表示しません。記録を続けていただくと表示されます。</p>
+
+  <h3>機種変更するとデータはどうなりますか</h3>
+  <p>ご自身で入力した生活ログは、iOSの通常のバックアップから復元されます。</p>
+  <p>Appleヘルスケアから取得した生体データは、プライバシー保護のためバックアップの対象外としています。新しい端末では、アプリを開いて再取り込みを行ってください。ヘルスケア側にデータが残っていれば復元されます。</p>
+
+  <h3>購読を解約するとどうなりますか</h3>
+  <p>それまでに記録されたデータの閲覧と、原データの書き出し（CSV）は引き続きご利用いただけます。長期のグラフ表示や月次PDFレポートなど、有料プランの機能のみご利用いただけなくなります。</p>
+  <p>解約は、iPhoneの「設定」→ ご自身の名前 →「サブスクリプション」から行えます。</p>
+
+  <h3>データを書き出したい</h3>
+  <p>アプリ内の「レポート」タブ、または「設定」→「データの書き出し」から、CSV形式で書き出せます。CSVの書き出しは無料でご利用いただけます。</p>
+
+  <h2>ご注意</h2>
+  <p>karada-log は記録と可視化のためのアプリであり、病気の診断、治療、予防を目的とするものではありません。体調について気になる変化がある場合は、医療機関にご相談ください。</p>
+
+  <p style="margin-top:40px"><a href="./privacy.html">プライバシーポリシー</a> ／ <a href="./terms.html">利用規約</a></p>
+
+</body>
+</html>
