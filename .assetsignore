@@ -1,0 +1,10 @@
+# Cloudflare Workers の静的アセットから除外する。
+# ここに置いたものは公開されない。
+#
+# 配置を変えて public/ にまとめる手もあるが、切り替えが完了するまでは
+# GitHub Pages（ルート配信）も生かしておく必要があるため、除外で対処する。
+wrangler.jsonc
+.gitignore
+.assetsignore
+.git
+README.md

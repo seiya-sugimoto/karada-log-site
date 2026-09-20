@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "karada-log-site",
+  "compatibility_date": "2026-09-18",
+  // アクセスログを Cloudflare 側に持たない。
+  // App Privacy で「診断データを収集しない」と申告している立場と揃える
+  // （relay/wrangler.toml で observability を無効にしているのと同じ理由）。
+  "observability": {
+    "enabled": false
+  },
+  "assets": {
+    "directory": ".",
+    // App Store Connect とアプリ内リンクは .html 付きのURLを指す。
+    // 既定の auto-trailing-slash は /privacy.html を /privacy へ 307 で飛ばすため、
+    // .html をそのまま 200 で返す "none" にする。
+    "html_handling": "none"
+  }
+}
